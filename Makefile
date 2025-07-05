@@ -10,3 +10,6 @@ build-binary: ## Build binaries for windows
 
 register-service: ## Register the service using sc
 	sc.exe create poc-go-windows-service start= auto binPath=$(shell pwd)/dist/windows-$(shell arch).exe
+
+build-setup: ## Build setup using innosetup
+	iscc.exe installer.iss

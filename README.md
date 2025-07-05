@@ -33,6 +33,8 @@ project aims to provide a clear, minimal implementation that demonstrates:
 - Start/Stop/Pause functionality
 - Basic logging setup
 - Configuration file support
+- Basic HTTP server on `:2025` to showcase background activity
+- Logs dummy message on tick every hour
 
 ## What is Missing for Production Use
 
@@ -57,8 +59,17 @@ project aims to provide a clear, minimal implementation that demonstrates:
 
 - Go build tools
 - Windows SDK (optional, for native Windows API access)
+- Innosetup
 
 ## Usage Instructions
+
+### Automatic instalation
+
+```bash
+make build-binary build-setup
+```
+
+### Manual installation
 
 1. **Build the Service**
    ```bash
@@ -70,8 +81,11 @@ project aims to provide a clear, minimal implementation that demonstrates:
    make register-service
    ```
 
-3. Manage the service in `Windows Services`
-4. View logs in `Event Viewer`
+### Interacting with the service
+
+- Manage the service in `Windows Services`
+- View logs in `Event Viewer`
+
 
 ## License
 

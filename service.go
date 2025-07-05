@@ -103,5 +103,5 @@ func runService(name string, isDebug bool) {
 }
 
 func main() {
-	runService("timo-test", false)
+	runService("poc-go-windows-service", false)
 }
